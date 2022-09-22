@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Blog</title>
-    <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="header">
-        <div id="logo">
-            <span class="logo-text">book</span><span class="cursive-text">blog</span>
-        </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="hamburger-btn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <nav id="top-menu">
-            <ul>
-               <li><a href="">Home</a></li>
-               <li><a href="">Blog</a></li>
-               <li><a href="">Podcasts</a></li>
-               <li><a href="">Books</a></li>
-               <li><a href="">About</a></li>
-            </ul>
-        </nav>
+      <div id="logo">
+        <span class="logo-text">book</span
+        ><span class="cursive-text">blog</span>
+      </div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="hamburger-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav id="top-menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Podcasts</a></li>
+          <li><a href="">Books</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
     </div>
     <main>
-        <div class="hero-container">
-            <figure>
-                <img class="hero-image" src="/bookstore.jpg" alt="Image of a bookstore">
-                <figcaption id="hero-caption">
-                    <span class="hero-captiontext">22. September 2022 - Lesedauer: 5min</span>
-                <span class="hero-captiontext">von Anonymous</span>
-            </figcaption>
-        </figure>
-               <div class="hero-text">Lorem ipsum dolor, amet consectetur. Labore at quo, sint possimus recusandae vero accusantium debitis!</div>
+      <!-- Hero Anfang -->
+      <div class="hero-container">
+        <div class="hero-image">
+          <img src="/bookstore.jpg" alt="Image of a bookstore" />
+          <div class="hero-caption">
+            <span class="caption-text">
+              22. September 2022 - Lesedauer: 5min</span
+            >
+            <span class="caption-text">von Anonymous</span>
+          </div>
         </div>
-        <hr class="splitter">
-        <div id="sidestories-container">
-            <div class="story-left">
-                <figure>
-                    <img src="./book-dog.jpg" alt="Dog with book">
-                    <figcaption> 
-                        <span class="hero-captiontext">von Anonymous</figcaption>
-                            
-                </figure>
-            </div>
-            <div class="story-right">
-                <figure>
-                    <img src="./book-dog.jpg" alt="Dog with book">
-                    <figcaption> 
-                        <span class="hero-captiontext">von Anonymous</figcaption>
-                </figure>
-            </div>
-        </div>
-    
-    </main>
-</body>
+        <p class="hero-text">
+          Lorem ipsum dolor, amet consectetur. Labore at quo, sint possimus
+          recusandae vero accusantium debitis!
+        </p>
+      </div>
+      <!-- Hero Ende -->
 
+      <!-- seitenteiler -->
+      <hr class="splitter" />
+      <!-- seitenteiler ende -->
+
+      <!-- Sidestories Anfang -->
+      <div id="sidestories-container">
+        <div class="story">
+          <img class="sidestory-img" src="./book-dog.jpg" alt="Dog with book" />
+          <span class="caption-text">von Anonymous</span>
+          <p class="sidestory-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+            inventore.
+          </p>
+        </div>
+        <div class="story">
+          <img class="sidestory-img" src="./book-dog.jpg" alt="Dog with book" />
+          <span class="caption-text">von Anonymous</span>
+          <p class="sidestory-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus,
+            earum?
+          </p>
+        </div>
+      </div>
+      <!-- Sidestories Ende -->
+
+      <!-- seitenteiler -->
+      <hr class="splitter" />
+      <!-- seitenteiler ende -->
+    </main>
+  </body>
 </html>
