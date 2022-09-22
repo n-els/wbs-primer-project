@@ -117,10 +117,16 @@ main {
   margin-top: 7px;
 }
 
-.hero-text {
+.hero-heading {
   font-size: 19px;
   font-weight: bold;
   margin: 10px 0 0 0;
+}
+
+.hero-text {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .splitter {
@@ -156,4 +162,47 @@ main {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.books-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  text-align: center;
+  grid-column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.book {
+  margin: 10px;
+}
+
+.book img {
+  max-width: 150px;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.book-title {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ccd5ae;
+  min-height: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.social {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.social a:link,
+.social a:visited {
+  color: #435018;
+}
+.social a:hover {
+  color: #000000;
 }
